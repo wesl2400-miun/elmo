@@ -1,0 +1,29 @@
+/* ANGÅENDE HELA FILEN
+* Denna stil är avsedd för stora skärmar och är utgångsstilen
+* för undersidan "index.html" (andra undersidor ska inte ladda den)
+*/
+
+.content {
+  width: 60%; /* Bredden på detta element ska vara 60% av sin föräldraelement (body)*/
+  display: flex; /* Layouten är flexibel, elementen staplas vid sidan av varandra på en rad ("row" är utgångsvärdet för flex-direction) */
+  justify-content: center;  /* Arrangerar elementen mot mitten längs "main-axis"*/
+  align-items: center;  /* Arrangerar elementen mot mitten längs "cross-axis"*/
+  margin-top: 0.5rem; /* Övre marginalen ändras till 0.5rem (det dynamiska måttet) */
+  margin-bottom: 0.5rem; /* Nedre marginalen ändras till 0.5rem (det dynamiska måttet) */
+  padding: 0; /* Padding behövs inte här */
+  background-color: #ddcaf3; /* Bakgrundsfärgen för hela klassen */
+}
+
+.photo {
+  display: block; /* Visa elementet på en ny rad */
+  padding: 1rem; /* Sätt padding till 1rem (det dynamiska måttet) */
+}
+
+.photo-desc {
+  font-size: 1.4rem; /* Sätt storleken på typpsnittet till 1.4rem (det dynamiska måttet) */
+  color: #3b3145; /* Typpsnittsfärgen */
+  text-align: center; /* Flytta texten till mitten av sin "box-container" (lådan som den inkluderas av) */
+  padding: 0 1rem;  /* Vertikal padding är 0 och horisontell padding är 1rem (det dynamiska måttet) */
+}
+
+

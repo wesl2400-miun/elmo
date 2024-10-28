@@ -1,0 +1,15 @@
+/*  ANGÅENDE HELA FILEN
+* Denna stil gäller bara photos.html och laddas upp bara om media villkoret "max-width: 700px" uppfylls. 
+* Detta innebär att om skärmen (spelar ingen roll vilken typ) är mindre än 700px ska nedanstående CSS-rules gälla.
+*/
+@media (max-width: 700px) {
+  .content {
+    flex-direction: column; /* Ändra utgångsvärdet "row" till kolumn så att elementen staplas ovan på varandra i en kolumn */
+    margin-bottom: 20%; /* Sätt nedre marginalen till 20% av sitt föräldraelement (body) */
+  }
+
+  .photo {
+    width: 80%; /* Ändra bredden till 80% av sitt föräldraelement (content) */
+    height: 80%; /* Ändra höjden till 80% av sitt föräldraelement (content) */
+  }
+}

@@ -1,0 +1,21 @@
+/* ANGÅENDE HELA FILEN
+* Denna stil är avsedd för stora och medelstora skärmar och är utgångsstilen
+* för undersidan "photos.html" (andra undersidor ska inte ladda den)
+*/
+
+.content {
+  width: 100%; /* Sätt bredden till 100% av sitt föräldraelement (body) */
+  display: flex; /* Layouten blir flexibel */
+  justify-content: center; /* Arrangerar elementen mot mitten längs "main-axis"*/
+  flex-wrap: wrap; /* Om elementen inte ryms på samma rad flytta dem till en ny rad*/
+  align-items: center; /* Arrangerar elementen mot mitten längs "cross-axis"*/
+  gap: 1rem; /* Sätt det tomma utrymmet mellan elementen till 1rem (det dynamiska måttet)*/
+  margin-top: 1rem; /* Sätt övre marginalen till 1rem (det dynamiska måttet) */
+  margin-bottom: 12%; /* Sätt nedre marginalen till 12% av sitt föräldraelement (body) */
+}
+
+.photo {
+  display: block; /* Visa elementet på en ny rad */
+  padding: 1rem; /* Sätt padding till 1rem (det dynamiska måttet) */
+  background-color: #ddcaf3; /* Bakgrundsfärgen för hela klassen */
+}

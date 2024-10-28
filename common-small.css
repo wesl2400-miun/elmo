@@ -1,0 +1,39 @@
+/*  ANGÅENDE HELA FILEN
+* Denna fil laddas upp bara om media villkoret "max-width: 700px" uppfylls. Detta innebär
+* att om skärmen (spelar ingen roll vilken typ) är mindre än 700px ska nedanstående CSS-rules gälla.
+*/
+@media (max-width: 700px) {
+  .logo {
+    padding: 0.6rem 0; /* Ändra vertikal padding till 0.6rem (det dynamiska måttet) och horisontell padding till 0*/
+    border-radius: 0%; /* Inga runda kanter längre (Designen ändras lite för att passa mobilen) */
+  }
+  
+  .logo__title {
+    font-size: 3rem;  /* Ändra storleken på typpsnittet (med det dynamiska måttet rem) */
+  }
+
+  .logo__slogan {
+    font-size: 1.2rem;  /* Ändra storleken på typpsnittet (med det dynamiska måttet rem) */
+  }
+
+  .navigation {
+    width: 100%; /* Ändra navigationsbredden till 100% av sin föräldraelement (body) */
+    font-size: 1.5rem;  /* Ändra storleken på typpsnittet (med det dynamiska måttet rem) */
+  }
+
+  .navigation ul {
+    margin: 0.7rem 0; /* Ändra vertikal marginal till 0.7rem (det dynamiska måttet) och horisontell marginal till 0 */
+  }
+  
+  .footer {
+    height: 10vh; /* Ändra footers höjd till 10% av viewporten (webbsidans synliga fält) */
+  }
+
+  .footer__title {
+    font-size: 1.6rem; /* Ändra storleken på typpsnittet (med det dynamiska måttet rem) */
+  }
+
+  .footer__desc {
+    font-size: 1.2rem; /* Ändra storleken på typpsnittet (med det dynamiska måttet rem) */
+  }
+}

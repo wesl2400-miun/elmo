@@ -1,0 +1,20 @@
+/*  ANGÅENDE HELA FILEN
+* Denna stil gäller bara index.html och laddas upp bara om media villkoret "max-width: 700px" uppfylls. 
+* Detta innebär att om skärmen (spelar ingen roll vilken typ) är mindre än 700px ska nedanstående CSS-rules gälla.
+*/
+@media (max-width: 700px) {
+  .content {
+    width: 90%; /* Ändra bredden till 90% av sitt föräldraelement (body) */
+    flex-direction: column; /* Ändra ungångsvärdet "row" till "column" så att elementen staplas på varandra i en kolumn */
+    margin-top: 0.5rem; /* Ändra övre marginalen till 0.5rem (det dynamiska måttet */
+    margin-bottom: 0.5rem; /* Ändra nedre marginalen till 0.5rem (det dynamiska måttet */
+  }
+
+  .photo {
+    padding: 0.5rem; /* Ändra padding till 0.5rem (det dynamiska måttet */
+  }
+
+  .photo-desc {
+    font-size: 1.2rem; /* Ändra storleken på typsnittet till 1.2rem (det dynamiska måttet)*/
+  }
+}

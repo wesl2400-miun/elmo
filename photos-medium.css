@@ -1,0 +1,9 @@
+/*  ANGÅENDE HELA FILEN
+* Denna stil gäller bara photos.html och laddas upp bara om media villkoret "max-width: 1100px" uppfylls. 
+* Detta innebär att om skärmen (spelar ingen roll vilken typ) är mindre än 1100px ska nedanstående CSS-rules gälla.
+*/
+@media (max-width: 1100px) {
+  .content {
+    margin-bottom: 20%; /* Sätt nedre marginalen till 20% av sitt föräldraelement (body) */
+  }
+}

@@ -1,0 +1,9 @@
+/*  ANGÅENDE HELA FILEN
+* Denna stil gäller bara pricing.html och laddas upp bara om media villkoret "max-width: 1200px" uppfylls. 
+* Detta innebär att om skärmen (spelar ingen roll vilken typ) är mindre än 1200px ska nedanstående CSS-rules gälla.
+*/
+@media (max-width: 1200px) {
+  .content {
+    width: 80%; /* Ändra bredden till 80% av sitt föräldraelement (body) */
+  }
+}

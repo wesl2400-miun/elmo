@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- chareset="UTF-8" ser till att texter också kan skrivas på andra språk och inte bara på engelska-->
+    <meta charset="UTF-8">
+    <!-- Nedanstående meta tagg gör webbsidan responsiv, viewporten anpassas till alla skärmstorlekar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Taggen nedan ser till att Internet Explorer använder den senaste renderingsmotorn-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Webbsidans titel -->
+    <title>Elmo - The Dog Model</title>
+    <!-- "common-large.css" är utgångsstilen som alltid laddas (anpassad för stora skärmar) -->
+    <!-- "common-medium.css" laddas enbart om skärmen är mindre än 700px -->
+    <!-- "common-small.css" laddas enbart om skärmen är mindre än 400px -->
+    <!-- Media villkoren hjälper prestanda, stilar ska inte laddas i onödan -->
+    <link rel="stylesheet" href="common-large.css">
+    <link rel="stylesheet" href="common-medium.css" media="(max-width: 1100px)">
+    <link rel="stylesheet" href="common-small.css" media="(max-width: 700px)">
+    <!-- "photos" stilarna laddas bara för den här undersidan -->
+    <!-- Bara relevanta stilar ska laddas, detta är bra för prestanda -->
+    <link rel="stylesheet" href="photos-large.css">
+    <link rel="stylesheet" href="photos-medium.css" media="(max-width: 1100px)">
+    <link rel="stylesheet" href="photos-small.css" media="(max-width: 700px)">
+    <!-- Tabbikonen -->
+    <!-- Bilden är fri från "copyright" och "attribution", kan användas gratis i hobby samt komersiella projekt -->
+    <!-- Kommer från denna webbsida: https://uxwing.com -->
+    <!-- Jag har lagt till width="30px" och height="30px" till koden för att göra bilden mindre -->
+    <link rel="icon" type="image/svg" href="logo.svg">
+    <!-- Teckentypsnittet hämtas från Googles api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header lämpar sig för webbsidans logo och slogan -->
+    <!-- Justerade logo ikonen med hjälp av "width" och height" attributen, för att göra logotypen större -->
+    <header class="logo">
+      <img src="logo.svg" width="50px" height="50px" alt="Elmo - The Dog Model - Logo"/>
+      <div class="logo__title">Elmo</div>
+      <div class="logo__slogan">The Dog Model</div>
+    </header>
+    <!-- nav taggen lämpar sig för navigationen, innehåller länkar till övriga undersidor -->
+    <!-- Jag tog bort "href" attributet från "photos" länken eftersom "photos" undersidan redan visas -->
+    <!-- Ingen poäng att ladda om samma sida -->
+    <nav class="navigation">
+      <ul>
+        <li><a class="navigation__link" href="index.html">About</a></li>
+        <li><a class="navigation__link_selected">Photos</a></li>
+        <li><a class="navigation__link" href="pricing.html">Pricing</a></li>
+      </ul> 
+    </nav>
+    <!-- Justerade bilderna med "width" och "height" attributena eftersom de var för stora -->
+    <div class="content">
+      <img class="photo" width="25%" height="25%" src="elmo_armchair1.jpg" alt="Elmo1">
+      <img class="photo" width="25%" height="25%" src="elmo_couch1.jpg" alt="Elmo2">
+      <img class="photo" width="25%" height="25%" src="elmo_armchair2.jpg" alt="Elmo3">
+      <img class="photo" width="25%" height="25%" src="elmo_floor1.jpg" alt="Elmo4">
+      <img class="photo" width="25%" height="25%" src="elmo_floor2.jpg" alt="Elmo4">
+      <img class="photo" width="25%" height="25%" src="elmo_floor3.jpg" alt="Elmo4">
+    </div>
+    <!-- Jag tycker att kontakt informationen passar inuti "footer" taggen. -->
+    <!-- Användarna ska alltid se den och vara redo att hyra ut Elmo -->
+    <footer class="footer">
+      <div class="footer__title">Hire Elmo For Modeling</div>
+      <div class="footer__desc">Email the owner at: wesl2400@student.miun.se</div>
+    </footer>
+  </body>
+</html>

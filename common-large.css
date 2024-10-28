@@ -1,0 +1,114 @@
+/* ANGÅENDE HELA FILEN
+* Gemensam stil som alla undersidor ska ladda. Denna stil är avsedd för stora skärmar och är utgångsstilen
+* för alla undersidor.
+*/
+
+body {
+  display: flex; /* Gör layouten flexibel */
+  flex-direction: column; /* Element staplas på varandra i en kolumn */
+  justify-content: center; /* Arrangerar elementen mot mitten längs "main-axis"*/
+  align-items: center; /* Arrangerar elementen mot mitten längs "cross-axis"*/
+  margin: 0; /* Inga marginaler, de behövs inte */
+  padding: 0; /* Ingen padding, behövs inte här heller */
+  font-family: "PT Sans Narrow", sans-serif; /* Kopierad från Googles api för teckentypsnitt */
+  font-weight: 400; /* 400 sätts som utgångsvärdet för hela filen, definierar tjockleken på typsnittet*/
+  font-style: normal; /* Alltså ingen bold eller italic, bara vanlig typsnitt*/
+  background-color: #cfb4e3; /* bakgrundsfärgen omfattar hela filen */
+  user-select: none; /* Användarna får inte markera texterna på webbsidan (Tycker det ser fint ut så här) */
+}
+
+.logo {
+  display: flex; /* Layouten blir flir flexibel */
+  flex-direction: column; /* Elementet staplas på varandra i en kolumn */
+  justify-content: center; /* Arrangerar elementen mot mitten längs "main-axis"*/
+  align-items: center; /* Arrangerar elementen mot mitten längs "cross-axis"*/
+  text-align: center; /* Texten arrangeras i mitten av sin "box-container" (lådan som den inkluderas av)*/
+  width: 100%; /* logotypens bredd sätts till 100% */
+  background-color: #edd6ff; /* Bakgrundsfärgen gäller bara elementen inuti förldraelementet av denna klass */
+  padding: 1rem 0; /* 1rem (det flexibla dynamiska måttet) sätts för veritkal padding och 0 för horisontell padding */
+  box-shadow: 1px 2px 3px #3e3049; /* Definierar skuggeffekten för "box-container" av den här klassen */
+  border-bottom-left-radius: 30%; /* Gör den nedre vänstra kanten rund med 30%*/
+  border-bottom-right-radius: 30%;/* Gör den nedre högra kanten rund med 30%*/
+}
+
+.logo__title {
+  font-size: 3.5rem; /* Storleken på typsnittet sätts till 3.5rem (det flexibla dynamiska måttet) */
+  font-weight: 700; /* Tjockleken för typsnittet höjs till 700 */
+  color: #3e3049; /* Definierar färgen på typsnittet */
+}
+
+.logo__slogan {
+  font-size: 1.6rem; /* Typsnittsstorleken är satt till det dynamiska rem måttet */
+  color: #4a3a57; /* Typsnittsfärgen */
+  font-style: italic; /* typsnitet ändras till kursiv */
+}
+
+.navigation {
+  width: 50%; /* bredden på navigationen är bara 50% av föräldraelementets (bodys) bredd*/
+  display: block; /* navigationen ska visas på en ny rad */
+  text-align: center; /* Typsnittet ska arrangeras mot mitten av "box-container" (lådan som den inkluderas i) */
+  background-color: #483d50; /* bakgrundsfärgen för denna klass */
+  font-size: 2rem; /* Typsnittsstorleken är satt till det dynamiska måttet rem (rotelement)*/
+  border-bottom-left-radius: 60%; /* den nedre vänstra kanten blir rund med 60% */
+  border-bottom-right-radius: 60%; /* den nedre högra kanten blir rund med 60% */
+}
+
+.navigation ul {
+  display: flex; /* Layouten blir flexibel. Elementen arrangeras vid sidan om varandra på en rad (utgångsvärdet för flex-driection är "row") */
+  justify-content: center; /* Arrangerar elementen mot mitten längs "main-axis"*/
+  align-items: center; /* Arrangerar elementen mot mitten längs "cross-axis"*/
+  list-style: none; /* Listor har inga kulpunkter eller liknande symboler */
+  gap: 1.5rem; /* Definierar det tomma utrymmet mellan elementen inuti denna klass */
+  padding: 0; /* padding behövs inte */
+  margin: 1rem 0; /* Vertikal padding är satt till 1rem (det flexibla måttet) och horisontell padding är 0 */
+}
+
+.navigation a {
+  text-decoration: none; /* Länkarna ska inte understrykas och dekoreras på något sätt */
+}
+
+.navigation__link_selected {
+  color: #f6afdb; /* Typsnittsfärgen för det för det valda elementet i länklistan inuti navigationsklassen */
+}
+
+.navigation__link {
+  color: #e3cff3; /* Typpsnittsfärgen för övriga länkar inuti navigationsklassen*/
+}
+
+.navigation__link:hover {
+   color: #f98bdb; /* Länkens typpsnitt ändrar färgen när den täcks över av en mus */
+}
+
+.navigation__link_selected:hover {
+   color: #f98bdb; /* Den valda länkens typpsnitt ändrar färgen när den täcks över av en mus */
+}
+
+.navigation__link:active {
+   color: #c18db3; /* Länkens typpsnitt ändrar färg när den klickas av en mus */
+}
+
+.navigation__link_selected:active {
+   color: #c18db3; /* Den valda länkens typpsnitt ändrar färgen när den klickas av en mus */
+}
+
+.footer {
+  position: fixed; /* Footers position ska alltid vara samma */
+  bottom: 0; /* Footers position ska alltid sitta i botten av viewporten (webbsidans synliga fält) */
+  width: 100%; /* Footers bredd ska vara 100% av föräldraelementet (i det fallet body elementet) */
+  height: 20vh; /* Footers höjd ska vara ungefär 20% av viewporten (webbsidans synliga fält) */
+  background-color: #eec5e1; /* Footers bakgrundsfärg */
+  color:#3a2d44; /* Typpsnittsfärgen inuti footer */
+  display: flex; /* Layouten blir flexibel */
+  flex-direction: column; /* Ändra "row" utgångsvärdet till "column" så att elementen staplas på varandra i en kolumn */
+  justify-content: center; /* Arrangerar elementen mot mitten längs "main-axis"*/
+  align-items: center; /* Arrangerar elementen mot mitten längs "cross-axis"*/
+  text-align: center; /* Texten flyttas mot mitten av sin "box-container" (den låadan som den inkluderas i) */
+}
+
+.footer__title {
+  font-size: 2rem; /* Storleken på typpsnittet sätts till 2rem (det dynamiska måttet) */
+}
+
+.footer__desc {
+  font-size: 1.3rem; /* Storleken på typpsnittet sätts till 1.3rem (det dynamiska måttet) */
+}

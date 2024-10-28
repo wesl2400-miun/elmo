@@ -1,0 +1,25 @@
+/* ANGÅENDE HELA FILEN
+* Denna stil är avsedd för stora skärmar och är utgångsstilen
+* för undersidan "pricing.html" (andra undersidor ska inte ladda den)
+*/
+
+.content {
+  width: 60%; /* Sätt bredden till 60% av sitt föräldraelement (body) */
+  display: flex; /* Layouten blir flexibel */
+  flex-direction: column; /* Ändra utgångsvärdet "row" till kolumn så att elementen staplas ovan på varandra i en kolumn */
+  justify-content: center; /* Arrangerar elementen mot mitten längs "main-axis"*/
+  align-items: center; /* Arrangerar elementen mot mitten längs "cross-axis"*/
+  margin-top: 0.5rem; /* Sätt övre marginalen till 0.5rem (det dynamiska måttet) */
+  margin-bottom: 0.5rem; /* Sätt nedre marginalen till 0.5rem (det dynamiska måttet) */
+  padding-right: 0.4rem; /* Sätt högra padding till 0.4rem (det dynamiska måttet) */
+  padding-bottom: 3rem;  /* Sätt nedre padding till 3rem (det dynamiska måttet) */
+  background-color: #ddcaf3;  /* Bakgrundsfärgen för hela klassen */
+  font-size: 1.4rem;  /* Sätt storleken på typsnittet till 1.4rem (det dynamiska måttet*/
+  color: #3b3145;  /* Färgen på typsnittet */
+  text-align: start; /* Flytta texten till början av sin "box-container" (lådan som den inkluderas av) */
+}
+
+.content h1 {
+  padding: 0; /* Padding för header texten inuti "content" klassen behövs inte */
+  margin-top: 1rem; /* Sätt övre marginalen till 0 */
+}

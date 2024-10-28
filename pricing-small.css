@@ -1,0 +1,10 @@
+/*  ANGÅENDE HELA FILEN
+* Denna stil gäller bara pricing.html och laddas upp bara om media villkoret "max-width: 600px" uppfylls. 
+* Detta innebär att om skärmen (spelar ingen roll vilken typ) är mindre än 600px ska nedanstående CSS-rules gälla.
+*/
+@media (max-width: 600px) {
+  .content {
+    width: 90%;     width: 90%; /* Ändra bredden till 80% av sitt föräldraelement (body) */
+    font-size: 1.2rem; /* Ändra typsnittsstorleken till 1.2rem (det dynamiska måttet) */
+  }
+}
